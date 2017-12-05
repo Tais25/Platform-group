@@ -32,10 +32,10 @@ public class MonsterCtrl : MonoBehaviour {
 
 	void Flip(){
 		speed = -speed;
-		if (speed > 0){
+		if (speed < 0){
 			sr.flipX = true;
 		}
-		else if (speed < 0){
+		else if (speed > 0){
 			sr.flipX = false;
 		}
 	}
